@@ -4,6 +4,13 @@
     src: url(https://raw.githubusercontent.com/Zoxplers/paimoncss/main/font1.ttf);
 }
 
+@font-face 
+{
+    font-family:material-icons;
+    src:url(https://fonts.gstatic.com/s/materialsymbolsrounded/v26/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOcbTCVpeRL2w5rwZu2rIelXxc.woff2)
+}
+
+/*IDs*/
 #editorBtnM
 {
     display: none !important;
@@ -37,4 +44,36 @@
 #mainLogo
 {
     content:url("https://krunker.io/img/logo_1.png");
+}
+
+/*Classes*/
+.menuItemTitle
+{
+    font-size: 20px !important;
+}
+
+*
+{
+    font-size: 18px;
+}
+
+.button
+{
+    border: 3px solid var(--color1) !important;
+}
+
+.tabHeader.selected
+{
+    color: var(--color1) !important;
+    border-bottom: 3px var(--color1) !important;
+}
+
+.menBtnIcn
+{
+    color: var(--color1) !important;
+}
+
+:root
+{
+    --color1: rgb(255, 194, 113);
 }
