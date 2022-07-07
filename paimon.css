@@ -1,4 +1,40 @@
-@font-face {
+@font-face
+{
     font-family: gamefont;
     src: url(https://raw.githubusercontent.com/Zoxplers/paimoncss/main/font1.ttf);
+}
+
+#editorBtnM
+{
+    display: none !important;
+}
+
+#newsHolder
+{
+    display: none !important;
+}
+
+#tlInfHold
+{
+    display: none !important;
+}
+
+#seasonLabel
+{
+    transform: none !important;
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 30px;
+    visibility: hidden;
+}
+
+#seasonLabel:after
+{
+    content: 'Paimon CSS';
+    visibility: visible;
+}
+
+#mainLogo
+{
+    content:url("https://krunker.io/img/logo_1.png");
 }
