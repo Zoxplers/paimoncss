@@ -46,6 +46,16 @@
     content:url("https://krunker.io/img/logo_1.png");
 }
 
+#healthBar
+{
+    height: 40px !important;
+}
+
+#bottomLeftHolder
+{
+
+}
+
 /*Classes*/
 .menuItemTitle
 {
@@ -71,6 +81,19 @@
 .menBtnIcn
 {
     color: var(--color1) !important;
+}
+
+.healthBarSeg
+{
+    width: 70px;
+    border-radius: 0 !important;
+    margin-right: 0 !important;
+}
+
+.hpBSeg
+{
+    background-color:#9fd87a !important;
+    border-radius: 0 !important;
 }
 
 :root
