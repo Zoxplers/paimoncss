@@ -10,6 +10,11 @@
     src:url(https://fonts.gstatic.com/s/materialsymbolsrounded/v26/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOcbTCVpeRL2w5rwZu2rIelXxc.woff2)
 }
 
+th
+{
+    color: var(--color1);
+}
+
 /*IDs*/
 #editorBtnM
 {
@@ -46,14 +51,153 @@
     content:url("https://krunker.io/img/logo_1.png");
 }
 
-#healthBar
+/*Transparent Backgrounds*/
+#chatInputHolder
 {
-    height: 40px !important;
+    background-color: var(--color1transparent);
 }
 
+#chatList
+{
+    background-color: var(--color1transparent);
+}
+
+#voiceDisplay
+{
+    background-color: var(--color1transparent);
+}
+
+.UIB
+{
+    background-color: transparent;
+}
+
+/*Bottom Right Stuff*/
+#ammoMax
+{
+    color: white;
+    font-size: 30px;
+}
+
+#ammoVal
+{
+    color: white;
+    font-size: 30px;
+}
+
+#ammoIcon
+{
+    display: none;
+}
+
+#ammoDisplay
+{
+    position: relative;
+    left: -10px;
+    margin: 0;
+    padding: 0 20px 0 0;
+    border-radius: 0;
+}
+
+#bottomRight
+{
+    right: auto;
+    left: 15px;
+    background-color: var(--color1transparent);
+    padding: 10px 10px 0 0;
+}
+
+
+/*Bottom Left Stuff*/
 #bottomLeftHolder
 {
+    left: 50% !important;
+}
 
+#healthValueHolder
+{
+    padding: 0px 0px 0px 0px !important;
+    margin-bottom: 0px !important;
+    position: relative !important;
+    background-color: transparent !important;
+    left: -560px;
+    top: 34px;
+    z-index: 10;
+}
+
+#healthBar
+{
+    top: 2px;
+    height: 40px !important;
+    position: relative;
+    left: calc(-496px - 50%);
+}
+
+#maxHP
+{
+    color: white;
+    font-size: 19px;
+}
+
+#healthValue
+{
+    color: white;
+    font-size: 19px;
+    padding-top: 5px;
+}
+
+#challIcon
+{
+    display: none;
+}
+
+#hudClassIcon
+{
+    width: 94px !important;
+    height: 94px !important;
+    left: -252px;
+    padding: 2px 200px 50px 200px;
+    border-radius: 5px;
+    background-color: var(--color1transparent);
+    position: relative;
+}
+
+#reloadMsg
+{
+    bottom: 335px !important;
+}
+
+/*Weapon Display*/
+#weapDisplay {
+    bottom: 30px;
+    right: 160px;
+}
+
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.weapIcon {
+    filter: brightness(2) drop-shadow(2px 2px var(--color1)) drop-shadow(-2px -2px var(--color1)) drop-shadow(-2px 2px var(--color1)) drop-shadow(2px -2px var(--color1)) drop-shadow(4px 4px 0px var(--color1));
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    height: 0;
+    width: 160px;
+}
+
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    height: 80px;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+}
+
+.weapKey {
+    display: none;
 }
 
 /*Classes*/
@@ -99,4 +243,5 @@
 :root
 {
     --color1: rgb(255, 194, 113);
+    --color1transparent: rgba(255, 193, 113, 0.2);
 }
