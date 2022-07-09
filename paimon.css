@@ -15,7 +15,27 @@ th
     color: var(--color1);
 }
 
+td
+{
+    color: rgba(255,255,255,0.1);
+}
+
 /*IDs*/
+#aHider
+{
+    display: none !important;
+}
+
+#aHolder
+{
+    display: none !important;
+}
+
+#chatHolder
+{
+    width: 400px;
+}
+
 #editorBtnM
 {
     display: none !important;
@@ -51,8 +71,45 @@ th
     content:url("https://krunker.io/img/logo_1.png");
 }
 
+#voiceDisplay
+{
+    display: none;
+}
+
+#timerIcon
+{
+    display: none;
+}
+
+#timerVal
+{
+    font-size: 50px;
+}
+
+#killFeed > *
+{
+    font-size: 19px;
+}
+
 /*Transparent Backgrounds*/
 #chatInputHolder
+{
+    padding-left: 0;
+    background-color: var(--color1transparent);
+}
+
+#timerDisplay
+{
+    background-color: var(--color1transparent);
+    padding: 10px;
+}
+
+#leaderDisplay
+{
+    background-color: var(--color1transparent);
+}
+
+#teamScores
 {
     background-color: var(--color1transparent);
 }
@@ -62,7 +119,12 @@ th
     background-color: var(--color1transparent);
 }
 
-#voiceDisplay
+#killCard
+{
+    background-color: var(--color1transparent);
+}
+
+.kfItem
 {
     background-color: var(--color1transparent);
 }
